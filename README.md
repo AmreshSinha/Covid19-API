@@ -9,6 +9,7 @@ On VPS (Unix Based Systems)
 1. Clone the Repository
     + `git clone https://github.com/AmreshSinha/Covid19-API`
 2. Install dependencies
+    + `pip install -r requirements.txt`
 2. Run `scraper.py`
     + `python scraper.py`
     + Note: The Scraper has a time interval of 1 hour by default
