@@ -11,7 +11,7 @@ On VPS (Unix Based Systems)
 2. Install dependencies
     + `pip install -r requirements.txt`
 2. Run `scraper.py`
-    + `python scraper.py`
+    + `python scraper/scraper.py`
     + Note: The Scraper has a time interval of 1 hour by default
 3. Run Flask App with Gunicorn or Waitress
     + Like for waitress the `waitress_server.py` is there
