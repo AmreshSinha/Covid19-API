@@ -16,7 +16,7 @@ On VPS (Unix Based Systems)
 3. Run Flask App with Gunicorn or Waitress
     + Like for waitress the `waitress_server.py` is there
     + `python waitress_server.py`
-4. If you want to host for web then update your rules in nginx accordingly and get one ssl
+4. If you want to host for web then update your rules in nginx accordingly and get one ssl certificate
 
 ## Contribution
 
