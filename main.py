@@ -31,6 +31,12 @@ with open('iso3.json') as json_file:
 with open('data_latest.json') as json_file:
     data = json.load(json_file)
 
+@app.route('/')
+@app.route('/home')
+@app.route('/index')
+def home():
+    return "Hello World!"
+
 @app.route('/api/all', methods = ['GET'])
 def all():
     return jsonify(data)
@@ -71,5 +77,5 @@ def country():
 # For Debugging    
 # app.run()
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0', port=80)

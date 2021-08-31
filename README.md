@@ -13,6 +13,8 @@ On VPS (Unix Based Systems)
     + `python scraper.py`
     + Note: The Scraper has a time interval of 1 hour by default
 3. Run Flask App with Gunicorn or Waitress
+    + Like for waitress the `waitress_server.py` is there
+    + `python waitress_server.py`
 4. If you want to host for web then update your rules in nginx accordingly and get one ssl
 
 ## Contribution
