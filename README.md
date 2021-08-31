@@ -26,4 +26,4 @@ There is a lot of work still remaining. Some of which:
 3. Adding provinces covid data under their parent country.
 4. Making our own pycountry module fork according to our needs.
 
-For Extra features you want to contribute open an issue first.
+For Extra features (other than the above) you want to contribute, open an issue first.
