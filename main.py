@@ -10,13 +10,13 @@ app = flask.Flask(__name__)
 
 def make_json(csvFilePath, jsonFilePath, format):
     data = {}
-    with open(csvFilePath, encoding='utf-8') as csvf:
+    with open(f'./data/{csvFilePath}', encoding='utf-8') as csvf:
         csvReader = csv.DictReader(csvf)
         for rows in csvReader:
             key = rows[format]
             data[key] = rows
  
-    with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
+    with open(f'./data/{jsonFilePath}', 'w', encoding='utf-8') as jsonf:
         jsonf.write(json.dumps(data, indent=4))
 
 make_json(r'data_latest.csv', r'iso2.json', 'iso2')
