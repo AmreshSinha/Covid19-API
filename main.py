@@ -4,7 +4,9 @@ import csv
 import json
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+
+# For Debugging
+# app.config["DEBUG"] = True
 
 def make_json(csvFilePath, jsonFilePath, format):
     data = {}
@@ -66,5 +68,8 @@ def country():
     else:
         return "Error: No valid ISO2 or ISO3 country code provided."
 
-    
-app.run()
+# For Debugging    
+# app.run()
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=80)

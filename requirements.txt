@@ -1,3 +1,4 @@
+wheel
 Flask
 pandas
 requests
@@ -7,3 +8,4 @@ lxml
 warnings
 gunicorn
 pycountry
+waitress

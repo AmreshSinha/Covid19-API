@@ -104,5 +104,5 @@ while(True):
     # df = dd.from_pandas(dt,npartitions=1)
 
     df.to_csv('data_latest.csv', index = False)
-    # time.sleep(3600)
-    # os.remove("data_latest.csv")
+    # 1 Hour Time Delay
+    time.sleep(3600)
