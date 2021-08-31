@@ -12,14 +12,14 @@ An opensource Covid19 API (currently uses worldometer only)
         ```
         <your-ip>/api/all
         ```
-    + [Response](https://gist.githubusercontent.com/AmreshSinha/d4baf9eb526eea77bec7e72aac7c0c58/raw/88c6bf765b9c105e1144e929dca69d9acc3a4e5f/all.json)
+    + [Response](https://gist.github.com/AmreshSinha/d4baf9eb526eea77bec7e72aac7c0c58)
 
 - Covid19 WorldWide Summarised Data
     + Request URL
         ```
         <your-ip>/api/world
         ```
-    <script src="https://gist.github.com/AmreshSinha/0044c62b2352f36cccf2b46f937f140d.js"></script>
+    + [Response](https://gist.github.com/AmreshSinha/0044c62b2352f36cccf2b46f937f140d)
         
 
 ## Usage
