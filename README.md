@@ -20,7 +20,20 @@ An opensource Covid19 API (currently uses worldometer only)
         <your-ip>/api/world
         ```
     + [Response](https://gist.github.com/AmreshSinha/0044c62b2352f36cccf2b46f937f140d)
+
+- Covid19 India Data
+    + Request URL
+        ```
+        <your-ip>/api/country?req=ind
+        ```
+        or
+
+        ```
+        <your-ip>/api/country?req=in
+        ```
         
+    + [Response](https://gist.github.com/AmreshSinha/bea8419175170d5994300b690afe1001)
+    
 
 ## Usage
 
