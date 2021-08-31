@@ -24,11 +24,11 @@ make_json(r'data_latest.csv', r'iso3.json', 'iso3')
 make_json(r'data_latest.csv', r'data_latest.json', 'Country,Other')
 
 
-with open('iso2.json') as json_file:
+with open('./data/iso2.json') as json_file:
     iso2 = json.load(json_file)
-with open('iso3.json') as json_file:
+with open('./data/iso3.json') as json_file:
     iso3 = json.load(json_file)
-with open('data_latest.json') as json_file:
+with open('./data/data_latest.json') as json_file:
     data = json.load(json_file)
 
 @app.route('/')
