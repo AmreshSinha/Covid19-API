@@ -103,6 +103,7 @@ while(True):
     
     # df = dd.from_pandas(dt,npartitions=1)
 
-    df.to_csv('data_latest.csv', index = False)
+    df.to_csv('../data/data_latest.csv', index = False) # On Unix Based System
+    # df.to_csv('./data/data_latest.csv', index = False) # On Windows System, Literally it sucks when it comes to hosting!
     # 1 Hour Time Delay
     time.sleep(3600)
