@@ -38,6 +38,9 @@ An opensource Covid19 API (currently uses worldometer only)
 ## Usage
 
 On VPS (Unix Based Systems)
+
+Without Docker
+
 1. Clone the Repository
     + `git clone https://github.com/AmreshSinha/Covid19-API`
 2. Install dependencies
@@ -49,6 +52,18 @@ On VPS (Unix Based Systems)
     + Like for waitress the `waitress_server.py` is there
     + `python waitress_server.py`
 4. If you want to host for web then update your rules in nginx accordingly and get one ssl certificate
+
+With Docker
+
+1. Clone the Repository
+    + `git clone https://github.com/AmreshSinha/Covid19-API`
+2. Build Docker Image
+    + `docker build -t covid19-api:1.0 .`
+3. Run Container
+    + `docker container run --name covid19-api-web -p 80:80 covid19-api:1.0`
+    + The container will start running with PORT 80 exposed to Public.
+4. To Stop the Container
+    + `docker container stop covid19-api-web`
 
 ## Contribution
 
