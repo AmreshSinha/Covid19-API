@@ -1,0 +1,22 @@
+# For hosting with Traefik
+# Here Traefik is using proxy network for communicating with other container
+
+version: '3.7'
+
+services:
+  covid19:
+    build: .
+    restart: always
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.covid19-secure.entrypoints=websecure"
+      - "traefik.http.routers.covid19-secure.rule=Host(`covid19-api.x-axis.me`)" # Change covid19-api.x-axis.me to your domain/subdomain
+      - "traefik.http.routers.covid19-secure.service=covid19-service"
+      - "traefik.http.services.covid19-service.loadbalancer.server.port=80"
+
+networks:
+  proxy:
+    external: true
