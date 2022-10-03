@@ -5,7 +5,6 @@ requests
 numpy
 beautifulsoup4
 lxml
-warnings
 gunicorn
 pycountry
 waitress
